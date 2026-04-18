@@ -65,7 +65,20 @@
 		display: none !important;
 		border-bottom: none !important;
 	}
-</style>
+/* Mobile Fix */
+@media screen and (max-width: 980px) {
+	#top-menu ul {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+		padding: 10px 0;
+	}
+	
+	#top-menu ul li {
+		margin-left: 0 !important;
+	}
+}
+					</style>
 	</head>
 	<body class="is-preload">
 
