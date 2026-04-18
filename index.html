@@ -10,52 +10,62 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-													<style>
-			.logo strong { color: #AE132A; }
-			.button { background-color: #AE132A; border-color: #AE132A; }
-			.button:hover { background-color: #8C0F22; }
-			.icon { color: #AE132A; }
-			header.major h2:after { background: #AE132A; }
-			
-			#header {
-				position: sticky;
-				top: 0;
-				background-color: #ffffff;
-				z-index: 100;
-				border-bottom: 1px solid #eaeaea;
-			}
+											<style>
+	.logo strong { color: #AE132A; }
+	.button { background-color: #AE132A; border-color: #AE132A; }
+	.button:hover { background-color: #8C0F22; }
+	.icon { color: #AE132A; }
+	header.major h2:after { background: #AE132A; }
+	
+	/* Sticky Header */
+	#header {
+		position: sticky;
+		top: 0;
+		background-color: #ffffff;
+		z-index: 100;
+		border-bottom: 1px solid #eaeaea;
+		box-shadow: none;
+	}
 
-			#top-menu ul {
-				display: flex;
-				list-style: none;
-				margin: 0;
-				padding: 0;
-			}
-			
-			#top-menu ul li {
-				margin-left: 42px;
-			}
-			
-									#top-menu ul li a {
-				text-decoration: none !important;
-				color: #AE132A !important;
-				font-weight: 700 !important;
-				font-size: 1.08em !important;
-				white-space: nowrap;
-				letter-spacing: 0.4px;
-				padding: 28px 0 24px 0;
-			}
-			
-			#top-menu ul li a:hover {
-				color: #8C0F22 !important;
-			}
+	/* Top Navigation - Strong Override */
+	#top-menu ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-			#top-menu ul li a:after,
-			#header nav ul li a:after {
-				content: none !important;
-				display: none !important;
-			}
-		</style>
+	#top-menu ul li {
+		margin-left: 42px;
+	}
+
+	#top-menu ul li a,
+	#nav ul li a,
+	nav ul li a {
+		text-decoration: none !important;
+		border-bottom: none !important;
+		color: #AE132A !important;
+		font-weight: 700 !important;
+		font-size: 1.08em !important;
+		white-space: nowrap;
+		letter-spacing: 0.4px;
+		padding: 28px 0 24px 0 !important;
+	}
+
+	#top-menu ul li a:hover {
+		color: #8C0F22 !important;
+	}
+
+	/* Kill underlines completely */
+	#top-menu ul li a:after,
+	#header nav ul li a:after,
+	#nav ul li a:after,
+	nav ul li a:after {
+		content: none !important;
+		display: none !important;
+		border-bottom: none !important;
+	}
+</style>
 	</head>
 	<body class="is-preload">
 
