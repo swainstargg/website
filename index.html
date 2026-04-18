@@ -3,46 +3,79 @@
 <head>
     <title>Danish Legal</title>
     <style>
-        body { margin:0; font-family:Arial,sans-serif; background:#f8fafc; }
-        .hero { 
-            background: #AE132A; 
-            color:white; 
-            padding:100px 20px; 
-            text-align:center; 
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Segoe UI',Arial,sans-serif; line-height:1.6; color:#333; background:#fafafa; }
+        
+        .hero {
+            background: linear-gradient(135deg, #AE132A 0%, #C81E3A 100%);
+            color: white;
+            text-align: center;
+            padding: 140px 20px 100px;
         }
-        h1 { 
-            font-size:52px; 
-            margin:0; 
+        
+        .hero h1 {
+            font-size: 62px;
+            margin-bottom: 16px;
         }
-        .btn { 
-            background:white; 
-            color:#AE132A; 
-            padding:15px 35px; 
-            border-radius:50px; 
-            text-decoration:none; 
-            font-weight:bold; 
-            display:inline-block; 
-            margin-top:25px; 
+        
+        .hero p {
+            font-size: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
         }
-        .section { padding:60px 20px; text-align:center; }
+        
+        .section {
+            padding: 90px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .btn {
+            background: #AE132A;
+            color: white;
+            padding: 16px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 30px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover { transform: translateY(-3px); }
     </style>
 </head>
 <body>
     <div class="hero">
         <h1>Danish Legal</h1>
-        <p style="font-size:24px;">Professional Legal Services</p>
-        <a href="#contact" class="btn">Get Legal Help</a>
+        <p>Strategic legal counsel with modern thinking</p>
     </div>
 
     <div class="section">
-        <h2>Our Services</h2>
-        <p>Corporate Law • Family Law • Property Law • Dispute Resolution</p>
-    </div>
-
-    <div class="section" id="contact" style="background:#AE132A; color:white;">
-        <h2>Contact Us</h2>
-        <p>Email: info@danishlegal.com</p>
-        <p>Phone: +92 XXX XXX XXXX</p>
+        <h2 style="text-align:center; margin-bottom:50px;">Our Practice Areas</h2>
+        <div class="services-grid">
+            <div class="service-card"><h3>Corporate Law</h3></div>
+            <div class="service-card"><h3>Dispute Resolution</h3></div>
+            <div class="service-card"><h3>Family &amp; Inheritance</h3></div>
+            <div class="service-card"><h3>Real Estate</h3></div>
+        </div>
+        <center><a href="#" class="btn">View All Services</a></center>
     </div>
 </body>
 </html>
