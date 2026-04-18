@@ -58,11 +58,43 @@
         }
 
         .team-member {
+            display: flex;
+            gap: 40px;
             background: white;
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 2px 15px rgba(0,0,0,0.08);
             margin-bottom: 40px;
+        }
+
+        .team-photo {
+            width: 220px;
+            height: 220px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f8f8f8;
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .team-content h3 {
+            margin-top: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+            }
+            .team-photo {
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -92,14 +124,19 @@
                     <header class="major"><h2>Our Team</h2></header>
                     
                     <div class="team-member">
-                        <h3>Danish Aftab</h3>
-                        <h4 style="color:#AE132A; margin-bottom:25px;">Managing Partner</h4>
-                        
-                        <p>Mr. Aftab is licensed to practice in the High Courts of Pakistan. He has completed his Bachelor of Laws (LL.B Honours) from the University of London and holds a Master of Laws (LL.M) from the University of California, Berkeley with Certificates of Specialization in Business Law and Intellectual Property and Technology Law.</p>
-                        
-                        <p>He is a Research Fellow to China Law Society and serves as an International Consultant to Kunming International Arbitration Service Center in Kunming, China.</p>
-                        
-                        <p>Mr. Aftab has extensive experience in constitutional law, corporate law, tax law, intellectual property, privacy law, defamation, and white-collar crime. He has served three Attorney-Generals for Pakistan and was part of the negotiations team that settled the $1.2 Billion ICSID Award in the Karkey matter.</p>
+                        <div class="team-photo">
+                            <img src="images/danish-aftab.jpg" alt="Danish Aftab">
+                        </div>
+                        <div class="team-content">
+                            <h3>Danish Aftab</h3>
+                            <h4 style="color:#AE132A; margin-bottom:25px;">Managing Partner</h4>
+                            
+                            <p>Mr. Aftab is licensed to practice in the High Courts of Pakistan. He holds an LL.B (Honours) from the University of London and an LL.M from the University of California, Berkeley with Certificates of Specialization in Business Law and Intellectual Property and Technology Law.</p>
+                            
+                            <p>He is a Research Fellow to China Law Society and serves as an International Consultant to Kunming International Arbitration Service Center in Kunming, China.</p>
+                            
+                            <p>Mr. Aftab has extensive litigation experience in constitutional, corporate, tax, intellectual property, and white-collar crime matters. He has served three Attorney-Generals for Pakistan and was part of the team that successfully settled the $1.2 Billion ICSID Award in the Karkey matter.</p>
+                        </div>
                     </div>
 
                 </section>
@@ -108,7 +145,7 @@
         </div>
     </div>
 
-    <!-- Same Footer as Contact Page -->
+    <!-- Footer -->
     <footer id="footer" style="background:#1e1e1e; color:#fff; padding:65px 20px 45px; text-align:center;">
         <div class="inner" style="max-width:1100px; margin:0 auto;">
             <ul class="contact" style="display:flex; flex-wrap:wrap; justify-content:center; gap:45px; list-style:none; padding:0; margin:0;">
