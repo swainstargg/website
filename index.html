@@ -27,7 +27,7 @@
 				box-shadow: none;
 			}
 
-							/* Professional Top Menu - Final Fix */
+										/* Professional Top Menu - Strong Fix */
 			#top-menu ul {
 				display: flex;
 				list-style: none;
@@ -43,14 +43,20 @@
 				text-decoration: none !important;
 				color: #333;
 				font-weight: 600;
-				font-size: 1.1em;
+				font-size: 1.08em;
 				white-space: nowrap;
 				letter-spacing: 0.5px;
-				padding: 20px 0;
+				padding: 22px 0;
 			}
 			
 			#top-menu ul li a:hover {
 				color: #AE132A;
+			}
+			
+			/* Force remove any underline from template */
+			#top-menu ul li a:after,
+			#header nav ul li a:after {
+				display: none !important;
 			}
 		</style>
 	</head>
