@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-														<style>
+															<style>
 			.logo strong { color: #AE132A; }
 			.button { background-color: #AE132A; border-color: #AE132A; }
 			.button:hover { background-color: #8C0F22; }
@@ -27,7 +27,7 @@
 				box-shadow: none;
 			}
 
-			/* Top Navigation - Strong Styling */
+			/* Top Navigation Menu */
 			#top-menu ul {
 				display: flex;
 				list-style: none;
@@ -51,6 +51,13 @@
 			
 			#top-menu ul li a:hover {
 				color: #8C0F22 !important;
+			}
+
+			/* Force remove underlines */
+			#top-menu ul li a:after,
+			#header nav ul li a:after {
+				content: none !important;
+				display: none !important;
 			}
 		</style>
 	</head>
